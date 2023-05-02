@@ -1,0 +1,423 @@
+@font-face {
+  font-family: proxima-Semibold;
+  src: url("../fonts/PROXIMANOVA-SBOLD-WEBFONT.TTF");
+}
+
+@font-face {
+  font-family: noto-Bold;
+  src: url("../fonts/Noto_Sans/NotoSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: gotham-Black;
+  font-style: normal;
+  src: url("../fonts/Gotham/Gotham-Black.otf");
+}
+
+@font-face {
+  font-family: gotham-Regular;
+  font-style: normal;
+  src: url("../fonts/Gotham/GothamBook.ttf");
+}
+
+@font-face {
+  font-family: gotham-Medium;
+  font-style: normal;
+  src: url("../fonts/Gotham/GothamMedium.ttf");
+}
+
+.landingpage-section {
+  background-color: #14181C;
+  width: 100%;
+  min-height: 100vh;
+  padding: 3% 3%;
+}
+
+.landingpage-section .logo-image-section .logo {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.landingpage-section .form-img {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 4% 0%;
+}
+
+.landingpage-section .form-img.sign-img {
+  height: 80vh;
+}
+
+@media (max-width: 575.98px) {
+  .landingpage-section .form-img.sign-img {
+    height: 26vh;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .landingpage-section .form-img {
+    height: 170px;
+  }
+}
+
+.landingpage-section .form-img img {
+  width: 70%;
+}
+
+.landingpage-section .footer-form {
+  padding-left: 0;
+  list-style: none;
+}
+
+@media (max-width: 575.98px) {
+  .landingpage-section .footer-form {
+    text-align: center;
+  }
+}
+
+.landingpage-section .footer-form li {
+  display: inline-block;
+  margin-right: 4%;
+  font-size: 12px;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .landingpage-section .footer-form li {
+    margin-right: 2%;
+  }
+}
+
+.landingpage-section .footer-form li:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.landingpage-section .footer-form li .footer-form-link {
+  color: #ffffff;
+}
+
+.landingpage-section hr {
+  border-top: 1px solid #A8A8A8;
+}
+
+.landingpage-section .social-list {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.landingpage-section .social-list li {
+  display: inline-block;
+  margin: 4px;
+}
+
+.landingpage-section .social-list li .social-link {
+  color: #14181C;
+  font-size: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.landingpage-section .social-list li .social-link:hover {
+  background-color: #1B6DE0;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.landingpage-section .copyrights {
+  font-size: 12px;
+  color: #ffffff;
+  margin: 3px 0px;
+  text-align: right;
+}
+
+.landingpage-section .login-form-main-section {
+  border: 1px solid #A8A8A8;
+  text-align: center;
+  border-radius: 4px;
+  padding: 10% 14%;
+  min-height: 85vh;
+}
+
+@media (max-width: 575.98px) {
+  .landingpage-section .login-form-main-section {
+    padding: 6%;
+    min-height: auto;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .landingpage-section .login-form-main-section {
+    padding: 6%;
+    min-height: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .landingpage-section .login-form-main-section {
+    padding: 6%;
+    min-height: auto;
+  }
+}
+
+.landingpage-section .login-form-main-section .logo-text {
+  font-size: 24px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0px;
+  margin-bottom: 12px;
+  font-family: gotham-Black;
+}
+
+@media (max-width: 575.98px) {
+  .landingpage-section .login-form-main-section .logo-text {
+    font-size: 20px;
+    margin: 0px;
+  }
+}
+
+.landingpage-section .login-form-main-section .welcome-text {
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 575.98px) {
+  .landingpage-section .login-form-main-section .welcome-text {
+    font-size: 16px;
+  }
+}
+
+.landingpage-section .login-form-main-section .google-facebook-btns {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px;
+  width: 100%;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+.landingpage-section .login-form-main-section .google-facebook-btns .google-btn {
+  width: 176px;
+  height: 40px;
+  background-color: #31AA52;
+  border: 0px;
+  font-size: 17px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+@media (max-width: 575.98px) {
+  .landingpage-section .login-form-main-section .google-facebook-btns .google-btn {
+    width: 148px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .landingpage-section .login-form-main-section .google-facebook-btns .google-btn {
+    width: 120px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .landingpage-section .login-form-main-section .google-facebook-btns .google-btn {
+    width: 120px;
+  }
+}
+
+.landingpage-section .login-form-main-section .google-facebook-btns .google-btn.fb-btn {
+  background-color: #1B6DE0;
+}
+
+.landingpage-section .login-form-main-section .google-facebook-btns .google-btn .g-icon {
+  font-size: 12px;
+  margin-right: 4px;
+}
+
+.landingpage-section .login-form-main-section .or-text {
+  font-size: 16px;
+  color: #A8A8A8;
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 14px;
+}
+
+.landingpage-section .login-form-main-section .login-inpt {
+  background-color: transparent;
+  border: 1px solid #A8A8A8;
+  font-size: 14px;
+  color: #ffffff;
+  height: 40px;
+}
+
+.landingpage-section .login-form-main-section .login-inpt:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  color: #1B6DE0;
+}
+
+.landingpage-section .login-form-main-section .login-inpt::-webkit-input-placeholder {
+  font-size: 12px;
+}
+
+.landingpage-section .login-form-main-section .login-inpt:-ms-input-placeholder {
+  font-size: 12px;
+}
+
+.landingpage-section .login-form-main-section .login-inpt::-ms-input-placeholder {
+  font-size: 12px;
+}
+
+.landingpage-section .login-form-main-section .login-inpt::placeholder {
+  font-size: 12px;
+}
+
+.landingpage-section .login-form-main-section .agree-txt {
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.landingpage-section .login-form-main-section .agree-txt .terms {
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.landingpage-section .login-form-main-section .forget-password {
+  font-size: 14px;
+  text-align: right;
+  color: #1B6DE0;
+  margin: 0px;
+  margin-top: -5px;
+}
+
+.landingpage-section .login-form-main-section .create-btn {
+  background-color: #1B6DE0;
+  width: 100%;
+  height: 40px;
+  border: none;
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 20px 0px;
+}
+
+.landingpage-section .login-form-main-section .create-btn.submit-btn {
+  margin: 0px;
+}
+
+.landingpage-section .login-form-main-section .have-an {
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0px;
+}
+
+.landingpage-section .login-form-main-section .have-an .login-here {
+  font-size: 14px;
+  color: #1B6DE0;
+  text-decoration: none;
+}
+
+.grp-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 14%;
+  margin-bottom: 6%;
+}
+
+.grp-flex .grp-inp {
+  width: 100%;
+  background-color: transparent;
+  border: 0px;
+  border-bottom: 2px solid #A8A8A8;
+  padding: 10px;
+  height: 40px;
+  font-size: 20px;
+  font-family: noto-Bold;
+  color: #ffffff;
+  border-radius: 0px;
+  text-align: center;
+  margin: 4px 6px;
+}
+
+.grp-flex .grp-inp::-webkit-outer-spin-button, .grp-flex .grp-inp::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.grp-flex .grp-inp:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  color: #1B6DE0;
+}
+
+.grp-flex .grp-inp::-webkit-input-placeholder {
+  font-size: 12px;
+}
+
+.grp-flex .grp-inp:-ms-input-placeholder {
+  font-size: 12px;
+}
+
+.grp-flex .grp-inp::-ms-input-placeholder {
+  font-size: 12px;
+}
+
+.grp-flex .grp-inp::placeholder {
+  font-size: 12px;
+}
+
+.newtweet-sec {
+  background-color: #14181C;
+}
+
+.newtweet-sec .newtweet {
+  padding: 10px 0px;
+}
+
+.newtweet-sec .newtweet .newtweet-title {
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.newtweet-sec .newtweet-btns {
+  border-top: 0px;
+}
+/*# sourceMappingURL=inner.css.map */

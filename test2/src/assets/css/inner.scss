@@ -1,0 +1,300 @@
+@import 'mixin';
+@import 'colors';
+@import 'fonts';
+
+
+// Create Account-section
+.landingpage-section{
+    background-color: $bgc;
+    width: 100%;
+    min-height: 100vh;
+    // height: auto;
+    padding: 3% 3%;
+
+    .logo-image-section{
+        
+        .logo{
+            width: 150px;
+            border-radius: 10px;
+        }
+    }
+    .form-img{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 4% 0%;
+        &.sign-img{
+            height: 80vh;
+            @include xsm{
+                height: 26vh;
+            }
+        }
+        @include xsm{
+            height: 170px;
+        }
+        img{
+            width: 70%;
+        }
+    }
+
+    .footer-form{
+        padding-left: 0;
+        list-style: none;
+        @include xsm{
+            text-align: center;
+        }
+        li{
+            display: inline-block;
+            margin-right: 4%;
+            font-size: 12px;
+            @include md{
+                margin-right: 2%;
+            }
+            &:nth-last-child(1){
+                margin-right: 0;
+            }
+            .footer-form-link{
+                color: $whiteTxt;
+            }
+        }
+    }
+
+    hr{
+        border-top: 1px solid $ligthGrey;
+    }
+    .social-list{
+        padding-left: 0;
+        list-style: none;
+        margin: 0;
+        li{
+            display: inline-block;
+            margin: 4px;
+            .social-link{
+                color: $bgc;
+                font-size: 11px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 22px;
+                height: 22px;
+                border-radius: 4px;
+                background-color: $whiteTxt;
+                &:hover{
+                    background-color: $blue;
+                    color: $whiteTxt;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .copyrights{
+        font-size: 12px;
+        color: $whiteTxt;
+        margin: 3px 0px;
+        text-align: right;
+
+    }
+
+    .login-form-main-section{
+        border: 1px solid $ligthGrey;
+        text-align: center;
+        border-radius: 4px;
+        padding: 10% 14%;
+        min-height: 85vh;
+        @include xsm{
+            padding: 6%;
+            min-height: auto;
+        }
+        @include sm{
+            padding: 6%;
+            min-height: auto;
+        }
+        @include md{
+            padding: 6%;
+            min-height: auto;
+        }
+        .logo-text{
+            font-size: 24px;
+            text-align: center;
+            color: $whiteTxt;
+            margin: 0px;
+            margin-bottom: 12px;
+            font-family: gotham-Black;
+            @include xsm{
+                font-size: 20px;
+                margin: 0px;
+            }
+        }
+
+        .welcome-text{
+            font-size: 20px;
+            color: $whiteTxt;
+            text-align: center;
+            margin: 0px;
+            margin-bottom: 12px;
+            @include xsm{
+                font-size: 16px;
+            }
+        }
+
+        .google-facebook-btns{
+            list-style: none;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            padding: 0px;
+            width: 100%;
+            margin: 0px;
+            margin-bottom: 10px;
+            .google-btn{
+                width: 176px;
+                height: 40px;
+                background-color: #31AA52;
+                border: 0px;
+                font-size: 17px;
+                text-align: center;
+                color: $whiteTxt;
+                cursor: pointer;
+                border-radius: 4px;
+                @include xsm{
+                    width: 148px;
+                    font-size: 16px;
+                }
+                @include sm{
+                    width: 120px;
+                }
+                @include md{
+                    width: 120px;
+                }
+                &.fb-btn{
+                    background-color: $blue;
+                }
+                .g-icon{
+                    font-size: 12px;
+                    margin-right: 4px;
+                }
+            }
+        }
+        .or-text{
+            font-size: 16px;
+            color: $ligthGrey;
+            text-align: center;
+            margin: 0px;
+            margin-bottom: 14px;
+        }
+
+        .login-inpt{
+            background-color: transparent;
+            border: 1px solid $ligthGrey;
+            font-size: 14px;
+            color: $whiteTxt;
+            height: 40px;
+            &:focus{
+                box-shadow: none;
+                outline: none;
+                color: $blueTxt;
+            }
+            &::placeholder{
+                font-size: 12px;
+            }            
+        }
+        .agree-txt{
+            
+            font-size: 12px;
+            color: #ffffff;
+            .terms{
+                
+                font-size: 13px;
+                text-decoration: none;
+            }
+        }
+        .forget-password{
+            
+            font-size: 14px;
+            text-align: right;
+            color: $blueTxt;
+            margin: 0px;
+            margin-top: -5px;
+        }
+        .create-btn{
+            background-color: $blue;
+            width: 100%;
+            height: 40px;
+            border: none;
+            
+            font-size: 14px;
+            text-align: center;
+            color: #ffffff;
+            cursor: pointer;
+            margin: 20px 0px;
+            &.submit-btn{
+                margin: 0px;
+            }
+        }
+        .have-an{
+            
+            font-size: 14px;
+            color: #ffffff;
+            margin: 0px;
+            .login-here{
+                
+                font-size: 14px;
+                color: $blueTxt;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+.grp-flex{
+    display: flex;
+    margin-top: 14%;
+    margin-bottom: 6%;
+    .grp-inp{
+        width: 100%;
+        background-color: transparent;
+        border: 0px;
+        border-bottom: 2px solid $ligthGrey;
+        padding: 10px;
+        height: 40px;
+        font-size: 20px;
+        font-family: noto-Bold;
+        color: $whiteTxt;
+        border-radius: 0px;
+        text-align: center;
+        margin: 4px 6px;
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        &:focus{
+            box-shadow: none;
+            outline: none;
+            color: $blueTxt;
+        }
+        &::placeholder{
+            font-size: 12px;
+        } 
+    }
+}
+
+// popups page-25
+.newtweet-sec{
+    background-color: $bgc;
+    .newtweet{
+        padding: 10px 0px;
+        .newtweet-title{
+            font-size: 22px;
+            color: $whiteTxt;
+        }
+    }
+    .newtweet-btns{
+        border-top: 0px;
+    }
+}
